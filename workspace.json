@@ -7,6 +7,6 @@
     "store-feature-game-detail": "libs/store/feature-game-detail",
     "store-ui-shared": "libs/store/ui-shared",
     "store-util-formatters": "libs/store/util-formatters",
-    "store-util-interface": "libs/store/util-interface"
+    "util-interface": "libs/util-interface"
   }
 }
