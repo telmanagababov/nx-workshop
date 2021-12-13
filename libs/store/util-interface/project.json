@@ -1,20 +1,20 @@
 {
-  "root": "libs/api/util-interface",
-  "sourceRoot": "libs/api/util-interface/src",
+  "root": "libs/store/util-interface",
+  "sourceRoot": "libs/store/util-interface/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/api/util-interface/**/*.ts"]
+        "lintFilePatterns": ["libs/store/util-interface/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/api/util-interface"],
+      "outputs": ["coverage/libs/store/util-interface"],
       "options": {
-        "jestConfig": "libs/api/util-interface/jest.config.js",
+        "jestConfig": "libs/store/util-interface/jest.config.js",
         "passWithNoTests": true
       }
     }

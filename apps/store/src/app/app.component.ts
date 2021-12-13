@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { formatRating } from '@bg-hoard/store/util-formatters';
 import { HttpClient } from '@angular/common/http';
-import { Game } from '@bg-hoard/api/util-interface';
+import { Game } from '@bg-hoard/store-util-interface';
 
 @Component({
   selector: 'bg-hoard-root',
@@ -10,7 +10,7 @@ import { Game } from '@bg-hoard/api/util-interface';
 })
 export class AppComponent {
   title = 'Board Game Hoard';
-  games$ = this.httpClient.get<Game[]>('/api/games')
+  games$ = this.httpClient.get<Game[]>('/api/games');
   formatRating = formatRating;
 
   constructor(private httpClient: HttpClient) {}
