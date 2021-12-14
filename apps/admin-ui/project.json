@@ -63,6 +63,17 @@
         "jestConfig": "apps/admin-ui/jest.config.js",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "commands": [
+          "nx build store --configuration production",
+          "yarn surge dist/apps/admin-ui ${SURGE_DOMAIN_ADMIN_UI} --token ${SURGE_TOKEN}"
+        ],
+        "parallel": false
+      }
     }
   },
   "tags": []
