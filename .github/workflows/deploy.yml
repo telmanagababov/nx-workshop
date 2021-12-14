@@ -1,0 +1,18 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Building affected apps
+    steps:
+      - uses: actions/checkout@v1
+      - uses: bahmutov/npm-install@v1.4.5
+      - run: nx run-many --all --target=deploy --parallel
