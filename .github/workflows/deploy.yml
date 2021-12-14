@@ -17,4 +17,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1.4.5
-      - run: nx run-many --all --target=deploy --parallel
+      - run: npx nx run-many --all --target=deploy --parallel
