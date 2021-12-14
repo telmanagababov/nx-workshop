@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Board Game Hoard';
+  title = 'Board Game Hoard 🐱 🐱 🐱';
   formatRating = formatRating;
   games$: Observable<Game[]> = getAllGames$();
 
