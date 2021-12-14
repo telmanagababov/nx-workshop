@@ -69,7 +69,7 @@
       "outputs": [],
       "options": {
         "commands": [
-          "nx build store --configuration production",
+          "nx build admin-ui --configuration production",
           "yarn surge dist/apps/admin-ui ${SURGE_DOMAIN_ADMIN_UI} --token ${SURGE_TOKEN}"
         ],
         "parallel": false
