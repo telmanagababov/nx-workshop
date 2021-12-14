@@ -38,6 +38,10 @@
           {
             "value": "video-games",
             "label": "video-games"
+          },
+          {
+            "value": "video",
+            "label": "video"
           }
         ]
       }

@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:video"],
   "implicitDependencies": ["video-games"]
 }
