@@ -11,6 +11,32 @@
         "$source": "argv",
         "index": 0
       }
+    },
+    "directory": {
+      "type": "string",
+      "description": "Library directory",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
+      "x-prompt": {
+        "message": "Select a directory?",
+        "type": "list",
+        "items": [
+          {
+            "value": "api",
+            "label": "api"
+          },
+          {
+            "value": "store",
+            "label": "store"
+          },
+          {
+            "value": "shared",
+            "label": "shared"
+          }
+        ]
+      }
     }
   },
   "required": ["name"]
